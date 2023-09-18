@@ -368,7 +368,7 @@ def get_MNIST_data(resource_dir):
 
 
 if __name__ == '__main__':
-    work_dir = '/Users/ashwinwariar/CSCI5561/hw5/'
+    work_dir = '/Users/ashwinwariar/projects/cnn-mnist/'
 
     image_train, label_train, image_test, label_test, label_classes = get_MNIST_data(work_dir)
     image_train, image_test = image_train.reshape((-1, 196)).T / 255.0, image_test.reshape((-1, 196)).T / 255.0
